@@ -5,5 +5,5 @@ VERSION      ?= $(shell git describe --tags)
 
 release: 
 	docker build . --file ./2.0/Dockerfile -t $(DOCKER_IMAGE)
-	docker tag $(DOCKER_IMAGE):latest yudjinyu/$(DOCKER_IMAGE):${VERSION}
-	docker push yudjinyu/$(DOCKER_IMAGE):${VERSION}
+	docker tag $(DOCKER_IMAGE):latest yudjin/$(DOCKER_IMAGE):${VERSION}
+	docker push yudjin/$(DOCKER_IMAGE):${VERSION}
