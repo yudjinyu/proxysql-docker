@@ -13,5 +13,5 @@ RUN apt-get update && \
 VOLUME /var/lib/proxysql
 EXPOSE 6032 6033 6080
 
-COPY entrypoint.sh /entrypoint.sh
+COPY ./2.0/entrypoint.sh /entrypoint.sh
 ENTRYPOINT ["/entrypoint.sh"]
