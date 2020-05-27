@@ -13,6 +13,6 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: Build the tagged Docker image
-      run: docker build ./2.0/ --file Dockerfile
+      run: docker build . --file ./2.0/Dockerfile
     - name: Release
       run: make release
